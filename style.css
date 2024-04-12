@@ -139,7 +139,6 @@ section {
   width: 400px;
   border-radius: 50%;
   border: 2px solid lightgray;
-  box-shadow: 2px 2px 5px 8px rgba(0, 0, 0, 0.5);
   background-image: url(assets/profile-pic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,11 +154,11 @@ section {
   font-weight: 600;
 }
 
-.section__text__p1 {
+.section_text__p1 {
   text-align: center;
 }
 
-.section__text__p2 {
+.section_text__p2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
