@@ -4,53 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitthal Ganesh Shivane</title>
+    <!-- css link -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
+    <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png" />
+    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome CDN link  -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
   <body>
-    <nav class="desktop-nav">
-      <div class="logo">Vitthal G.S.</div>
+    <nav id="navbar" class="h-20 flex justify-around items-center">
+      <div class="logo-div text-3xl font-bold">
+        <span class="logo typewriter">💜Vitthal G.S.</span>
+      </div>
       <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-links flex justify-evenly list-none gap-8 text-lg">
+          <li
+            class="p-2 hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer rounded"
+          >
+            About
+          </li>
+          <li
+            class="p-2 hover:bg-cyan-400 hover:text-white ease-in-out duration-300 cursor-pointer rounded"
+          >
+            Skills
+          </li>
+          <li
+            class="p-2 hover:bg-orange-400 hover:text-white ease-in-out duration-300 cursor-pointer rounded"
+          >
+            Projects
+          </li>
+          <li
+            class="p-2 hover:bg-rose-500 hover:text-white ease-in-out duration-300 cursor-pointer rounded"
+          >
+            Contact
+          </li>
         </ul>
       </div>
     </nav>
-    <nav class="hamburger-nav">
-      <div class="logo">Vitthal G.S.</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon">
-          <i id="openMenuBtn" class="fa-solid fa-bars"></i>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a id="closeMenuBtn" href="#close">Close</a></li>
-        </div>
+    <nav id="hamburger" class="h-20 flex justify-around items-center">
+      <div class="logo-div text-xl">
+        <span class="logo typewriter">💜Vitthal G.S.</span>
+      </div>
+      <i id="menuBtn" class="fa-solid fa-bars"></i>
+      <div
+        id="hamburger-navlinks"
+        class="absolute flex justify-center items-center"
+      >
+        <ul class="flex flex-col justify-evenly gap-2 items-center sm: gap-0">
+          <li
+            class="ul hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer rounded md:p-2 sm:p-1"
+          >
+            About
+          </li>
+          <li
+            class="ul hover:bg-cyan-400 hover:text-white ease-in-out duration-300 cursor-pointer rounded md:p-2 sm:p-1"
+          >
+            Skills
+          </li>
+          <li
+            class="ul hover:bg-orange-400 hover:text-white ease-in-out duration-300 cursor-pointer rounded md:p-2 sm:p-1"
+          >
+            Projects
+          </li>
+          <li
+            class="ul hover:bg-rose-500 hover:text-white ease-in-out duration-300 cursor-pointer rounded md:p-2 sm:p-1"
+          >
+            Contact
+          </li>
+          <li
+            id="closeBtn"
+            class="ul hover:bg-red-500 hover:text-white ease-in-out duration-300 cursor-pointer rounded md:p-2 sm:p-1"
+          >
+            Close
+          </li>
+        </ul>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
+    <section id="hero" class="">
+      <div class="profile_pic_container">
         <div class="profileImg"></div>
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Vitthal G. Shivane</h1>
+        <h1 class="title typinganimation"><span class="vitthalg">Vitthal G. </span><span class="shivane">Shivane</span></h1>
         <p class="section_text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
@@ -77,255 +126,148 @@
               class="icon"
           /></a>
         </div>
-      </div>
     </section>
-    <section id="about">
-      <p class="section__text_p1" style="text-align: center">
+    <section id="about" class="">
+      <p class="section__text_p1">
         Get To Know More
       </p>
       <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container ">
-          <img src="assets/aboutO.jpg" alt="profile-pic" class="about-pic" />
+      <div class="about-section">
+        <div class="about-pic-container">
+          <img src="assets/aboutO.jpg" alt="about-section-picture" class="about-pic">
         </div>
         <div class="about-details-container">
-          <div class="about-containers-O">
+          <div class="about-containers">
             <div class="details-container">
               <img
                 src="assets/experience.png"
                 alt="experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
+              <span class="edu-title">Diploma(2020-23)</span>
               <p>
-                2+ years <br />
-                fontend development
+                Diploma In Mechanical Engg.<br/>
+                From Puranmal Lahoti Govt. Polytechnic, Latur
               </p>
-            </div>
-            <div class="details-container">
               <img
-                src="assets/education.png"
+                src="assets/experience.png"
                 alt="experience icon"
                 class="icon"
               />
-              <h3>Education</h3>
+              <span class="edu-title">B.Tech(2023-26)</span>
               <p>
-                B.tech in Computer Science And Engineering<br />
-                Diplma In Mechanical Engineering
+                Currently In B.tech 2nd Year in Computer Science & Engg.<br />
+                -At PBCOE, Nagpur
               </p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="text-section">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              hic veritatis labore molestias rerum harum enim modi. Quam
-              dignissimos pariatur tenetur! Saepe pariatur corrupti sint maxime
-              officia ad facilis aspernatur perspiciatis similique soluta
-              debitis quam libero nobis ipsa nemo, dolores doloribus! Dolorum
-              aspernatur deserunt optio voluptatibus vel, explicabo atque
-              molestias?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            hic veritatis labore molestias rerum harum enim modi. Quam
+            dignissimos pariatur tenetur! Saepe pariatur corrupti sint maxime
+            officia ad facilis aspernatur perspiciatis similique soluta
+            debitis quam libero nobis ipsa nemo, dolores doloribus! Dolorum
+            aspernatur deserunt optio voluptatibus vel, explicabo atque
+            molestias?
+          </p></div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="">
+      <p class="section__text_p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skill-container">
+        <div class="skillinfo">
+          <img src="assets/HTML.png" alt="" class="skill-logo">
+          <p class="skillsname">HTML5</p>
+        </div>
+        <div class="skillinfo">
+          <img src="assets/CSS.png" alt="" class="skill-logo">
+          <p class="skillsname">CSS</p>
+        </div>
+        <div class="skillinfo">
+          <img src="assets/JS.png" alt="" class="skill-logo">
+          <p class="skillsname">JavaScript</p>
+        </div>
+        <div class="skillinfo">
+          <img src="assets/tailwind.png" alt="" class="skill-logo">
+          <p class="skillsname">Tailwind CSS</p>
+        </div>
+        <div class="skillinfo">
+          <img src="assets/git.png" alt="" class="skill-logo">
+          <p class="skillsname">GitHub</p>
+        </div>
+      </div>
+    </section>
+    <section id="project" class="">
+      <p class="section__text_p1" style="text-align: center">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-section">
+        <div class="project-container">
+          <div class="project-img">
+            <img src="assets/project-1.png" alt="" class="pro-img">
+          </div>
+          <h2 class="project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="pro-btn gitbtn"><a href="https://github.com/vitthal4545" target="_blank">GitHub</a></button>
+            <button class="pro-btn livebtn"><a href="">Live Demo</a></button>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-img">
+            <img src="assets/project-2.png" alt="" class="pro-img">
+          </div>
+          <h2 class="project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="pro-btn gitbtn"><a href="https://github.com/vitthal4545" target="_blank">GitHub</a></button>
+            <button class="pro-btn livebtn"><a href="">Live Demo</a></button>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-img">
+            <img src="assets/project-3.png" alt="" class="pro-img">
+          </div>
+          <h2 class="project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="pro-btn gitbtn"><a href="https://github.com/vitthal4545" target="_blank">GitHub</a></button>
+            <button class="pro-btn livebtn"><a href="">Live Demo</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="">
+      <p class="section__text_p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-container">
+        <div class="contact-main-container">
+          <div class="contact-info">
+            <img src="assets/email.png" class="icon email-icon"  alt="" />
+            <p>
+              <a href="mailto:vitthalgs1434@gmail.com">vitthalgs1434@gmail.com</a>
             </p>
           </div>
-        </div>
-      </div>
-      <img
-        src="assets/arrow.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href('./experience')"
-      />
-    </section>
-    <section id="experience">
-      <p class="section_text_p1" style="text-align: center">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container skill-detail-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Fontent Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="assets/checkmark.png"
-                  alt="experience-icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="assets/checkmark.png"
-                  alt="experience-icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="assets/checkmark.png"
-                  alt="experience-icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+          <div class="contact-info">
+            <img src="assets/linkedin.png" class="icon contact-icon"  alt="linkedin profile" />
+            <p>
+              <a href="https://www.linkedin.com/in/vitthalgs45/" target="_blank"
+                >Linkedin</a
+              >
+            </p>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Fontent Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="assets/checkmark.png"
-                  alt="experience-icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>InterMediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="assets/checkmark.png"
-                  alt="experience-icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git & GitHub</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+          <div class="contact-info">
+              <img src="assets/phone.png" class="icon contact-icon"  alt="linkedin profile" />
+              <p>
+                <a href="" target="">+91 9370394732</a>
+              </p>
           </div>
         </div>
       </div>
-      <img
-        src="assets/arrow.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href('./projects')"
-      />
     </section>
-    <section id="projects">
-      <p class="section_text_p1" style="text-align: center">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container project-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="assets/project-1.png" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="assets/project-2.png" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="assets/project-3.png" alt="" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="assets/arrow.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href('./projects')"
-      />
-    </section>
-    <section id="contact">
-      <p class="section_text_p1" style="text-align: center">Get In Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="assets/email.png" class="icons email-icon" alt="" />
-          <p>
-            <a href="vitthalgs1434@gmail.com">vitthalgs1434@gmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img src="assets/linkedin.png" class="icons" alt="linkedin profile" />
-          <p>
-            <a href="https://www.linkedin.com/in/vitthalgs45/" target="_blank"
-              >Linkedin</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img src="assets/phone.png" class="icons" alt="linkedin profile" />
-          <p>
-            <a href="" target="">+91 9370394732</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="navlinks-container">
-          <ul class="footer-nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169 2024 Vitthal G. Shivane. All Rights Reserved.</p>
+    <footer id="footer">
+      <footer>
+        <p>Copyright &#169 2024 Vitthal G. Shivane. All Rights Reserved.</p>
+      </footer>
     </footer>
     <script src="script.js"></script>
   </body>
