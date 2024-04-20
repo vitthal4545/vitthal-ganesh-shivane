@@ -1,15 +1,11 @@
-const menu = document.querySelector(".menu-links");
-const openIcon = document.querySelector("#openMenuBtn");
-const closeIcon = document.querySelector("#closeMenuBtn");
+const menuBtn = document.querySelector("#menuBtn");
+const closeBtn = document.querySelector("#closeBtn");
+const navLinks = document.querySelector("#hamburger-navlinks");
 
-openIcon.addEventListener("click", function () {
-  openIcon.style.display = "none";
-  closeIcon.style.display = "block";
-  menu.classList.add("open");
+menuBtn.addEventListener("click", () => {
+  navLinks.style.visibility = "visible";
 });
 
-closeIcon.addEventListener("click", function () {
-  openIcon.style.display = "block";
-  closeIcon.style.display = "none";
-  menu.classList.remove("open");
+closeBtn.addEventListener("click", () => {
+  navLinks.style.visibility = "hidden";
 });
