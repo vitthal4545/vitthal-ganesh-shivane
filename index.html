@@ -23,6 +23,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <!-- CDN link of AOS js library for animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav id="navbar" class="h-20 flex justify-around items-center">
@@ -175,26 +177,26 @@
       </div>
     </section>
     <section id="skills" class="">
-      <p class="section__text_p1">Explore My</p>
-      <h1 class="title">Skills</h1>
+      <p class="section__text_p1" data-aos="fade-up">Explore My</p>
+      <h1 class="title" data-aos="fade-down">Skills</h1>
       <div class="skill-container">
-        <div class="skillinfo">
+        <div class="skillinfo" data-aos="fade-down">
           <img src="assets/HTML.png" alt="" class="skill-logo">
           <p class="skillsname">HTML5</p>
         </div>
-        <div class="skillinfo">
+        <div class="skillinfo" data-aos="fade-up">
           <img src="assets/CSS.png" alt="" class="skill-logo">
           <p class="skillsname">CSS</p>
         </div>
-        <div class="skillinfo">
+        <div class="skillinfo" data-aos="fade-down">
           <img src="assets/JS.png" alt="" class="skill-logo">
           <p class="skillsname">JavaScript</p>
         </div>
-        <div class="skillinfo">
+        <div class="skillinfo" data-aos="fade-up">
           <img src="assets/tailwind.png" alt="" class="skill-logo">
           <p class="skillsname">Tailwind CSS</p>
         </div>
-        <div class="skillinfo">
+        <div class="skillinfo" data-aos="fade-down">
           <img src="assets/git.png" alt="" class="skill-logo">
           <p class="skillsname">GitHub</p>
         </div>
@@ -271,4 +273,12 @@
     </footer>
     <script src="script.js"></script>
   </body>
+  <!-- AOS js library link -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  </script>
 </html>
