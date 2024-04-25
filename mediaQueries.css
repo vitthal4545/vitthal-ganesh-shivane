@@ -9,14 +9,6 @@
     display: flex;
   }
 
-  #hamburger-navlinks {
-    height: 7rem;
-    width: 6rem;
-    top: 12vh;
-    right: 6vw;
-    visibility: hidden;
-  }
-
   /* hero section */
 
   #hero {
@@ -180,16 +172,23 @@
   #navbar {
     display: none;
   }
+
+  /* hamburger section  */
   #hamburger {
     display: flex;
   }
 
-  #hamburger-navlinks {
-    height: 7rem;
-    width: 6rem;
-    top: 12vh;
-    right: 6vw;
-    visibility: hidden;
+  .navlinksO {
+    font-size: 1.2rem;
+  }
+
+  .navlinksO li {
+    padding: 0.7rem;
+  }
+
+  .navlinksO li i {
+    font-size: 1rem;
+    padding: 0.7rem;
   }
 
   /* hero section  */
@@ -257,6 +256,19 @@
 
   #hamburger {
     display: flex;
+  }
+
+  .navlinksO {
+    font-size: 1.2rem;
+  }
+
+  .navlinksO li {
+    padding: 0.7rem;
+  }
+
+  .navlinksO li i {
+    font-size: 1rem;
+    padding: 0.7rem;
   }
 
   #about {
